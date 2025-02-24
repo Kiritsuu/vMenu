@@ -28,6 +28,8 @@ namespace vMenuClient
         WalkingStyleNotForMale,
         WalkingStyleNotForFemale,
         RightAlignedNotSupported,
+        InvalidReport,
+        ReportAlreadyExists
     };
 
     /// <summary>
@@ -60,6 +62,8 @@ namespace vMenuClient
                 CommonErrors.PlayerNotFound => $"The specified player could not be found.{placeholder}",
                 CommonErrors.WalkingStyleNotForMale => $"This walking style is not available for male peds.{placeholder}",
                 CommonErrors.WalkingStyleNotForFemale => $"This walking style is not available for female peds.{placeholder}",
+                CommonErrors.InvalidReport => $"The report is either null or empty. Couldn't submit the report due to it being invalid.",
+                CommonErrors.ReportAlreadyExists => $"A game report with the ID: {placeholder} already exists. Try again later.",
                 CommonErrors.RightAlignedNotSupported => $"Right aligned menus are not supported for ultra wide aspect ratios.{placeholder}",
                 _ => $"An unknown error occurred, sorry!{placeholder}",
             };

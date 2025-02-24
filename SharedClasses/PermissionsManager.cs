@@ -64,6 +64,8 @@ namespace vMenuShared
             POFreeze,
             POScenarios,
             POUnlimitedStamina,
+            POViewReports,
+            POSubmitReports,
             #endregion
 
             // Vehicle Options
@@ -586,7 +588,7 @@ namespace vMenuShared
         /// </summary>
         /// <param name="permission"></param>
         /// <returns></returns>
-        private static string GetAceName(Permission permission)
+        public static string GetAceName(Permission permission)
         {
             var name = permission.ToString();
 
